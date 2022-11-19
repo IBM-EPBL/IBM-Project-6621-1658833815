@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+		<link rel="stylesheet" href="static/css/reg&log.css">		
+	</head>
+	<body>
+		<div class="logo">
+			<a href="#"><img src="static/img/logo/logo.png" alt=""></a>
+			<div class="heading">Skill and Jobs Recommendation</div>
+		</div>  <hr>
+	</br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Login</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('login') }}" method="post">
+                    <label for="email"> <b>Email</b> </label>
+					<input id="email" name="email" type="email" class="textbox" required style="color: white;"/></br></br>
+                    <label for="pass"> <b>Password</b> </label>
+					<input id="password" name="password" type="password" class="textbox" required style="color: white;"/></br></br></br>
+					<input type="submit" class="btn" value="Sign In"></br></br>
+				</form>
+			</h2>
+			<p class="bottom">Don't have an account? <a class="bottom" href="{{url_for('register')}}"> Sign Up here</a></p>
+		</div>
+		</div>
+	</body>
+</html>
